@@ -38,7 +38,7 @@ const Navbar = () => {
             <path d="M16 10a4 4 0 0 1-8 0" />
           </svg>
           <span className="font-bebas text-xl md:text-2xl font-bold uppercase tracking-wider mt-1">
-            Stora
+            Store
           </span>
         </Link>
         {/* {isAdmin && (

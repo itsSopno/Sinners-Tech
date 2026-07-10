@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Apex Pro TKL Wireless",
+    "category": "Keyboards",
+    "image": "https://i.pinimg.com/736x/1f/9f/9e/1f9f9efde08ce8b63997f/ac0248875.jpg",
+    "description": "The world's fastest keyboard with OmniPoint 2.0 adjustable hypermagnetic switches.",
+    "brand": "SteelSeries x Lando",
+    "isFeatured": true
+  },
+  {
+    "name": "Apex Pro Mini Custom",
+    "category": "Keyboards",
+    "image": "https://i.pinimg.com/736x/3c/45/51/3c4551ec2dbc89854c4d7722682bc25.jpg",
+    "description": "60% compact form factor with custom neon-volt keycaps.",
+    "brand": "Custom Build",
+    "isFeatured": true
+  }
+]

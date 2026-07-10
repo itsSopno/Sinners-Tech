@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./Src",                          // আপনার সব .ts ফাইল এখানে থাকবে
+    "outDir": "./dist",                         // কম্পাইল করা ফাইল এখানে যাবে
+
+    /* Environment Settings */
+    "module": "NodeNext",                       // আধুনিক নোড ভার্সনের জন্য
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "types": ["node"],                          // @types/node এর জন্য
+
+    /* Other Outputs */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Stricter Typechecking */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+
+    /* Style Options */
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* Module Handling */
+    "esModuleInterop": true,                    // CommonJS মডিউল ইম্পোর্ট করার জন্য জরুরি
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["Src/**/*"],                      // শুধুমাত্র src ফোল্ডারকে কম্পাইল করবে
+  "exclude": ["node_modules", "dist"]           // এগুলোকে এড়িয়ে চলবে
+}

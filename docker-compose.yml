@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: tech-backend
+    ports:
+      - "10001:10001"
+    environment:
+      - MONGO_URI=mongodb+srv://Nabil:zxc5566ed@cluster0.zfok7is.mongodb.net/LandoStore?retryWrites=true&w=majority
+      - PORT=10001
+      - JWT_SECRET=9df54c315c77e8bb8cac924005194e7ff560bef680491e64e1ec13d3ef529aa2
+      - GEMINI_API=AIzaSyC3Wqtuom-RsbQFIuCrzvGBK0SYuxDNeqM
+      - API_KEY=858877121149757
+      - Cloud_name=dhkdtyjsr
+      - API_SECRET=mq08RBbqc1MzaNGIJYV1MJt7tVY
+    networks:
+      - tech-network
+
+  frontend:
+    build:
+      context: ./Frontend/my-app
+      dockerfile: Dockerfile
+    container_name: tech-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:10001
+    depends_on:
+      - backend
+    networks:
+      - tech-network
+    stdin_open: true
+    tty: true
+
+networks:
+  tech-network:
+    driver: bridge

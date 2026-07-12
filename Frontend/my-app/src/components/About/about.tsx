@@ -44,9 +44,9 @@ const AboutPage: React.FC = () => {
                     </div>
 
                     <div className={styles.textContent}>
-                        <h2 className={styles.secTitle}>The Philosoph</h2>
+                        <h2 className={styles.secTitle}>The Philosophy</h2>
                         <p className={styles.lead}>
-                            We  just build peripherals; we craft tools for those who refuse to settle for the ordinary.
+                            We don't just build peripherals; we craft tools for those who refuse to settle for the ordinary.
                             Born from a passion for racing and precision engineering.
                         </p>
                         <p className={styles.body}>
